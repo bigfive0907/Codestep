@@ -1,0 +1,188 @@
+header{
+  display: flex;
+  height: 60px;
+}
+header p{
+  color: white;
+  background-color: rgb(70, 70, 70);
+  position: absolute;
+  display: inline-block;
+  font-size: 25px;
+  top: -10px;
+  left: 20%;
+  
+  padding: 0px 20px;
+  font-weight: bold;
+}
+header ul{
+  display: flex;
+  position: relative;
+  left: 70%;
+  top:-5px;
+}
+header li{
+  font-size: 20px;
+  padding: 0px 20px 30px 30px;
+  list-style: none;
+}
+
+.top img{
+  height: 600px;
+  width: 100%;
+  animation: SlideIn 1.6s;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+
+@keyframes SlideIn {
+  0% {
+    opacity: 0;/*初期状態では透明に*/
+    transform: translateX(64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.title {
+  margin-top: 60px;
+  width: 100%;
+
+  text-align: center;
+}
+h1{
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 0px;
+  border-bottom: 2px solid black;
+}
+.about{
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  animation: SlideIn 1.6s;
+}
+.about img{
+  border-radius: 50em;
+  height: 150px;
+}
+.about .name{
+  font-weight: bold;
+  font-size: 20px;
+}
+.about .textarea{
+  font-size: 15px;
+  margin-left: 20px;
+  text-align: left;
+}
+.about p{
+  height: fit-content;
+}
+.container{
+  display: flex;
+  padding: 0% 4% 0% 4%;
+}
+.content{
+  display: flexbox;
+  text-align: center;
+  padding: 5px 10px 10px 5px;
+}
+.content img{
+  margin: 0 auto;
+  width: 100%;
+  
+}
+
+@media screen and (max-width:600px) {
+  html{
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
+  }
+  
+  header{
+    display: flex;
+    height: 60px;
+  }
+  header p{
+    color: white;
+    background-color: rgb(70, 70, 70);
+    position: absolute;
+    display: inline-block;
+    font-size: 25px;
+    top: -10px;
+    left: 5%;
+    
+    padding: 0px 20px;
+    font-weight: bold;
+  }
+  header ul{
+    display: flex;
+    position: relative;
+    left: 40%;
+    top:-5px;
+  }
+  header li{
+    font-size: 20px;
+    padding: 0px 20px 30px 30px;
+    list-style: none;
+  }
+  
+  .top img{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+  }
+  .title {
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 0px;
+    border-bottom: 2px solid black;
+  }
+  .about{
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    display: flex;
+  }
+  .about img{
+    border-radius: 50em;
+    height: 150px;
+    position: relative;
+    object-fit: cover;
+  }
+  .about .name{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .about .textarea{
+    font-size: 12px;
+    margin-left: 20px;
+    text-align: left;
+  }
+  .about p{
+    margin: 0 auto;
+  }
+  .container{
+    width: 100%;
+    display: inline;
+    margin: 0 auto;
+    padding: 0% 4% 0% 4%;
+  }
+  .content{
+    width: 100%;
+    display: flexbox;
+    text-align: center;
+    padding: 5px 10px 10px 5px;
+    object-position: 0 50%;
+  }
+
+}
